@@ -1,0 +1,42 @@
+{
+  "brand": "MediBook",
+  "language": {
+    "label": "भाषा",
+    "select": "भाषा चुनें"
+  },
+  "nav": {
+    "home": "होम",
+    "findDoctors": "डॉक्टर खोजें",
+    "hospitalSearch": "अस्पताल खोज",
+    "joinAsDoctor": "डॉक्टर के रूप में जुड़ें",
+    "login": "लॉगिन",
+    "register": "रजिस्टर करें",
+    "dashboard": "डैशबोर्ड",
+    "myAppointments": "मेरी अपॉइंटमेंट",
+    "medicalHistory": "मेडिकल इतिहास",
+    "prescriptions": "प्रिस्क्रिप्शन",
+    "messages": "संदेश",
+    "doctorPortal": "डॉक्टर पोर्टल",
+    "adminPortal": "एडमिन पोर्टल",
+    "account": "खाता",
+    "accountMenu": "खाता मेनू",
+    "myProfile": "मेरी प्रोफ़ाइल",
+    "complaints": "शिकायतें",
+    "notificationSettings": "सूचना सेटिंग्स",
+    "twoFactorAuth": "टू-फैक्टर प्रमाणीकरण",
+    "signOut": "साइन आउट",
+    "openMenu": "नेविगेशन मेनू खोलें",
+    "closeMenu": "नेविगेशन मेनू बंद करें"
+  },
+  "actions": {
+    "save": "सहेजें",
+    "cancel": "रद्द करें",
+    "confirm": "पुष्टि करें",
+    "delete": "हटाएं",
+    "edit": "संपादित करें",
+    "back": "वापस",
+    "next": "आगे",
+    "search": "खोजें",
+    "loading": "लोड हो रहा है…"
+  }
+}

@@ -1,0 +1,188 @@
+/* ───────────────────────────────────────────────
+   Hospital Profile Edit
+─────────────────────────────────────────────── */
+
+.hospital-profile-edit .hospital-tab-panel {
+  margin-top: 16px;
+}
+
+/* ─── Cover Banner ─── */
+.hospital-cover {
+  position: relative;
+  height: 200px;
+  border-radius: var(--card-radius, 16px);
+  background: linear-gradient(135deg, rgba(0,119,182,0.85), rgba(3,4,94,0.85));
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: var(--shadow-md, 0 8px 24px rgba(0,0,0,0.08));
+}
+.hospital-cover::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0) 60%);
+}
+.hospital-cover-placeholder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: rgba(255,255,255,0.5);
+}
+.hospital-cover-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: var(--radius-full, 999px);
+  border: none;
+  background: rgba(255,255,255,0.92);
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(8px);
+}
+.hospital-cover-btn:hover:not(:disabled) {
+  background: white;
+  transform: translateY(-1px);
+}
+.hospital-cover-btn:disabled { opacity: 0.7; cursor: not-allowed; }
+.hospital-cover-title {
+  position: relative;
+  z-index: 2;
+  padding: 20px 24px;
+  color: white;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 22px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+/* ─── Gallery Manager ─── */
+.hospital-gallery-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.hospital-gallery-count {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gray-500);
+}
+.hospital-gallery-hint {
+  font-size: 12px;
+  margin: 0 0 16px;
+}
+.hospital-gallery-empty {
+  border: 2px dashed var(--gray-200);
+  border-radius: var(--radius-lg, 14px);
+  padding: 48px 24px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.hospital-gallery-empty:hover {
+  border-color: var(--primary);
+  background: rgba(0,119,182,0.03);
+}
+.hospital-gallery-empty i {
+  font-size: 40px;
+  color: var(--gray-300);
+}
+.hospital-gallery-empty p {
+  margin: 12px 0 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gray-500);
+}
+.hospital-gallery-empty span {
+  font-size: 12px;
+  color: var(--gray-400);
+}
+.hospital-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+.hospital-gallery-card {
+  border: 1px solid var(--gray-100);
+  border-radius: var(--radius-lg, 14px);
+  overflow: hidden;
+  background: white;
+  box-shadow: var(--shadow-sm, 0 2px 8px rgba(0,0,0,0.05));
+  cursor: grab;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.hospital-gallery-card:hover {
+  box-shadow: var(--shadow-md, 0 8px 24px rgba(0,0,0,0.1));
+}
+.hospital-gallery-card.dragging {
+  opacity: 0.5;
+  transform: scale(0.98);
+}
+.hospital-gallery-img-wrap {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+.hospital-gallery-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hospital-gallery-delete {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(239,35,60,0.92);
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.hospital-gallery-card:hover .hospital-gallery-delete { opacity: 1; }
+.hospital-gallery-order {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 2px 8px;
+  border-radius: var(--radius-full, 999px);
+  background: rgba(0,0,0,0.6);
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+}
+.hospital-gallery-caption-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px;
+}
+
+@media (max-width: 768px) {
+  .hospital-cover { height: 150px; }
+  .hospital-cover-title { font-size: 18px; padding: 14px 16px; }
+  .hospital-gallery-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+}

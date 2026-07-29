@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+    <meta name="description" content="Hospital Appointment Booking System — Book appointments with top doctors online, anytime. Get email and in-app reminders." />
+    <title>MediBook — Hospital Appointment Booking</title>
+
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="Content-Security-Policy" content="
+      default-src 'self';
+      script-src 'self' 'unsafe-inline' 'unsafe-eval' https://unpkg.com https://checkout.razorpay.com https://challenges.cloudflare.com;
+      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net https://unpkg.com;
+      font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net;
+      img-src 'self' data: https: blob:;
+      connect-src 'self' https://*.supabase.co wss://*.supabase.co https://*.supabase.co/functions/v1/* http://localhost:* https://*.razorpay.com https://api.razorpay.com https://lumberjack.razorpay.com https://challenges.cloudflare.com https://api.pwnedpasswords.com https://overpass-api.de https://nominatim.openstreetmap.org;
+      media-src 'self' data:;
+      frame-src https://api.razorpay.com https://checkout.razorpay.com https://*.razorpay.com https://challenges.cloudflare.com;
+      child-src https://api.razorpay.com https://checkout.razorpay.com https://*.razorpay.com https://challenges.cloudflare.com;
+      form-action 'self' https://*.razorpay.com https://api.razorpay.com;
+    " />
+
+    <!-- Mobile Web App -->
+    <meta name="theme-color" content="#0077B6" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Leaflet CSS + JS (OpenStreetMap) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+
+    <!-- Razorpay Standard Checkout -->
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

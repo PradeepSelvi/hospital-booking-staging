@@ -1,0 +1,42 @@
+{
+  "brand": "MediBook",
+  "language": {
+    "label": "மொழி",
+    "select": "மொழியைத் தேர்ந்தெடுக்கவும்"
+  },
+  "nav": {
+    "home": "முகப்பு",
+    "findDoctors": "மருத்துவர்களைத் தேடு",
+    "hospitalSearch": "மருத்துவமனை தேடல்",
+    "joinAsDoctor": "மருத்துவராக இணையுங்கள்",
+    "login": "உள்நுழைவு",
+    "register": "பதிவு செய்க",
+    "dashboard": "டாஷ்போர்டு",
+    "myAppointments": "எனது சந்திப்புகள்",
+    "medicalHistory": "மருத்துவ வரலாறு",
+    "prescriptions": "மருந்துச் சீட்டுகள்",
+    "messages": "செய்திகள்",
+    "doctorPortal": "மருத்துவர் போர்டல்",
+    "adminPortal": "நிர்வாக போர்டல்",
+    "account": "கணக்கு",
+    "accountMenu": "கணக்கு பட்டியல்",
+    "myProfile": "எனது சுயவிவரம்",
+    "complaints": "புகார்கள்",
+    "notificationSettings": "அறிவிப்பு அமைப்புகள்",
+    "twoFactorAuth": "இரு-கூறு அங்கீகாரம்",
+    "signOut": "வெளியேறு",
+    "openMenu": "வழிசெலுத்தல் பட்டியலைத் திற",
+    "closeMenu": "வழிசெலுத்தல் பட்டியலை மூடு"
+  },
+  "actions": {
+    "save": "சேமி",
+    "cancel": "ரத்து செய்",
+    "confirm": "உறுதிப்படுத்து",
+    "delete": "நீக்கு",
+    "edit": "திருத்து",
+    "back": "பின்செல்",
+    "next": "அடுத்து",
+    "search": "தேடு",
+    "loading": "ஏற்றுகிறது…"
+  }
+}
